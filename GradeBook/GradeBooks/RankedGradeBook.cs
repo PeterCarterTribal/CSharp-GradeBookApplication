@@ -22,12 +22,11 @@ namespace GradeBook.GradeBooks
 
             int twentyPercentInterval = (int)(numStudents * 0.2);
 
-            var betterStudents = Students.Count(s => s.AverageGrade > averageGrade);
+            int betterStudents = Students.Count(s => s.AverageGrade > averageGrade);
 
-            int i = 1;
             char[] passLetters = new char[] {'A', 'B', 'C', 'D', 'F'};
 
-            var index = betterStudents / twentyPercentInterval;
+            int index = betterStudents / twentyPercentInterval;
 
             return passLetters[index];
 
