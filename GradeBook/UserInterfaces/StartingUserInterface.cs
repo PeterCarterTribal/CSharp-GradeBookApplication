@@ -55,7 +55,6 @@ namespace GradeBook.UserInterfaces
                 Console.WriteLine(parts[2] + " is not a supported type of gradebook, please try again.");
                 return;
             }
-            C
         }
 
         public static void LoadCommand(string command)
