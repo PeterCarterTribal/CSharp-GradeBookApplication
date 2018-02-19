@@ -24,11 +24,11 @@ namespace GradeBook.GradeBooks
 
             int betterStudents = Students.Count(s => s.AverageGrade > averageGrade);
 
-            char[] passLetters = new char[] {'A', 'B', 'C', 'D', 'F'};
+            char[] gradeLetters = new char[] {'A', 'B', 'C', 'D', 'F'};
 
             int index = betterStudents / twentyPercentInterval;
 
-            return passLetters[index];
+            return gradeLetters[index];
 
         }
     }
